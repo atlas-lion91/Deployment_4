@@ -182,5 +182,5 @@ Here's a visual representation of the deployed system:
 
 ## Conclusion
 
-This guide has taken you through the process of setting up a robust infrastructure for running an application on AWS. CloudWatch offers monitoring capabilities, while Jenkins streamlines builds and deployments. As your application scales, remember the optimization strategies to ensure efficiency and reliability.
+This guide has taken you through the process of setting up a robust infrastructure for running an application on AWS. CloudWatch offers monitoring capabilities, Jenkins streamlines builds and deployments, while Nginx acts as a reverse proxy and load balancer for your application. As your application scales, remember the optimization strategies to ensure efficiency and reliability.
 
