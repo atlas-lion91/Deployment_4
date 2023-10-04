@@ -49,6 +49,9 @@ Let's begin by creating a virtual environment for Jenkins:
 - *Scalability*: It scales easily to accommodate complex deployment pipelines.
 - *Integration*: Jenkins integrates seamlessly with other tools and services.
 
+
+  
+
 8) **Nginx Configuration**: Nginx is a high-performance web server and reverse proxy that enhances security, load balancing, and the overall performance of your application.
    **Gunicorn** is a Python Web Server Gateway Interface HTTP server. It can be used to serve Python web applications.
 
@@ -73,7 +76,8 @@ Let's begin by creating a virtual environment for Jenkins:
     ```
     <img width="384" alt="nginx_landingpage" src="https://github.com/atlas-lion91/Deployment_4/assets/140761974/a4ce462e-8fcc-4756-9765-5b207b6cf160">
 
-     * When Nginx forwards requests to http://127.0.0.1:8000, it expects that Gunicorn is running there and will handle the Python web application logic. Gunicorn then communicates with your web application, runs the application code to generate responses, and sends those responses back to Nginx, which in turn forwards them to the client. Gunicorn acts as the interface between Nginx (the web server) and your Python web application, ensuring that your application is served efficiently and reliably in a production environment.
+     * These configuration changes are making the Nginx server listen on port 5000 and, for requests to the root directory ("/"), proxy them to a local server running on 127.0.0.1 at port 8000 while preserving certain headers for proper request handling. These changes were used to set up a reverse proxy to forward requests to an application running on a different port or server. When Nginx forwards requests to http://127.0.0.1:8000, it expects that Gunicorn is running there and will handle the Python web application logic. Gunicorn then communicates with your web application, runs the application code to generate responses, and sends those responses back to Nginx, which in turn forwards them to the client. Gunicorn acts as the interface between Nginx (the web server) and your Python web application, ensuring that your application is served efficiently and reliably in a production environment.
+       
 **Advantages**:
 - **Load Balancing**: Nginx distributes incoming traffic, improving application availability.
 - **Security**: It offers robust security features to protect against common web threats.
