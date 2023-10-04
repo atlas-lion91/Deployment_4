@@ -50,9 +50,11 @@ Let's begin by creating a virtual environment for Jenkins:
 - *Integration*: Jenkins integrates seamlessly with other tools and services.
 
 8) **Nginx Configuration**: Nginx is a high-performance web server and reverse proxy that enhances security, load balancing, and the overall performance of your application.
+   **Gunicorn** is a Python Web Server Gateway Interface HTTP server. It can be used to serve Python web applications.
 
 
    * Install Nginx (https://www.nginx.com/blog/setting-up-nginx/) and update the default configuration file (`/etc/nginx/sites-enabled/default`) to act as a reverse proxy, forwarding requests to the application server running on port 8000.
+
 
     ```nginx
     server {
@@ -69,6 +71,7 @@ Let's begin by creating a virtual environment for Jenkins:
     }
 
     ```
+     * When Nginx forwards requests to http://127.0.0.1:8000, it expects that Gunicorn is running there and will handle the Python web application logic. Gunicorn then communicates with your web application, runs the application code to generate responses, and sends those responses back to Nginx, which in turn forwards them to the client. Gunicorn acts as the interface between Nginx (the web server) and your Python web application, ensuring that your application is served efficiently and reliably in a production environment.
 **Advantages**:
 - **Load Balancing**: Nginx distributes incoming traffic, improving application availability.
 - **Security**: It offers robust security features to protect against common web threats.
