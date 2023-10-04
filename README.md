@@ -101,7 +101,6 @@ To monitor your infrastructure effectively, follow these steps:
 - **Cost-Effective**: It offers a cost-effective monitoring solution, with pay-as-you-go pricing.
 - **Integration**: CloudWatch seamlessly integrates with AWS services, providing comprehensive observability.
 
-<img width="807" alt="cpu_system" src="https://github.com/atlas-lion91/Deployment_4/assets/140761974/4e05fdff-e6e5-41ec-8766-cbc2d235cbfe">
 
 ### Jenkins Pipeline Configuration
 
@@ -115,11 +114,15 @@ Now, configure your Jenkins pipeline for seamless automation:
 
 4. **Branch Scanning**: Set up branch sources to scan for Jenkinsfiles.
 
-5. **Initial Run**: Execute the initial pipeline run.
+5. **Initial Run**: Execute the initial pipeline run and Deploy
+
+![Jenkins Build Success Dep4](https://github.com/atlas-lion91/Deployment_4/assets/140761974/a75807bb-d70b-4352-a44c-1b03c5216288)
+
 
 ### Server Performance Evaluation
 
 During deployment and builds, it's essential to monitor server performance. Use tools like `htop` and CloudWatch metrics and verify application accessibility by visiting your EC2 public IP on port 8000 in a web browser.
+<img width="807" alt="cpu_system" src="https://github.com/atlas-lion91/Deployment_4/assets/140761974/4e05fdff-e6e5-41ec-8766-cbc2d235cbfe">
 
 ### CPU Usage Alerts
 
@@ -144,6 +147,8 @@ To set up email notifications in Jenkins:
 If you encounter this error during Jenkins installation, it may be due to changes in Jenkins apt repositories. Resolve it by clearing Jenkins cache, reinstalling Java versions, and reinstalling packages.
 
 ### Jenkins Build Failure
+
+![Jenkins Build Failure](https://github.com/atlas-lion91/Deployment_4/assets/140761974/be2b5663-0734-4a2f-9615-059cf34655a5)
 
 Before initiating your Jenkins build, make sure to complete the following steps:
 
