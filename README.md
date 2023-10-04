@@ -128,7 +128,7 @@ During deployment and builds, it's essential to monitor server performance. Use 
 
 Set up a CloudWatch alarm to receive notifications when CPU usage exceeds 20% for 5 minutes, helping you proactively manage server resources.
 
-### T2 Micro Considerations
+### t2.Micro Considerations
 
 Be mindful that a t2.micro instance may encounter resource limitations, potentially leading to longer build times, performance bottlenecks under moderate loads, and instability during resource-intensive tasks.
 
