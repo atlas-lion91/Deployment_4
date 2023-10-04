@@ -92,7 +92,7 @@ To monitor your infrastructure effectively, follow these steps:
 - **Cost-Effective**: It offers a cost-effective monitoring solution, with pay-as-you-go pricing.
 - **Integration**: CloudWatch seamlessly integrates with AWS services, providing comprehensive observability.
 
-
+<img width="807" alt="cpu_system" src="https://github.com/atlas-lion91/Deployment_4/assets/140761974/4e05fdff-e6e5-41ec-8766-cbc2d235cbfe">
 
 ### Jenkins Pipeline Configuration
 
