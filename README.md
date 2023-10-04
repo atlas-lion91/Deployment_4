@@ -1,4 +1,4 @@
-# AWS EC2 Deployment 5 Guide: Monitoring with Aws CloudWatch
+# AWS EC2 Deployment 5 Guide: Monitoring with AWS CloudWatch
 
 October 2nd, 2023
 
@@ -71,6 +71,8 @@ Let's begin by creating a virtual environment for Jenkins:
     }
 
     ```
+    <img width="384" alt="nginx_landingpage" src="https://github.com/atlas-lion91/Deployment_4/assets/140761974/a4ce462e-8fcc-4756-9765-5b207b6cf160">
+
      * When Nginx forwards requests to http://127.0.0.1:8000, it expects that Gunicorn is running there and will handle the Python web application logic. Gunicorn then communicates with your web application, runs the application code to generate responses, and sends those responses back to Nginx, which in turn forwards them to the client. Gunicorn acts as the interface between Nginx (the web server) and your Python web application, ensuring that your application is served efficiently and reliably in a production environment.
 **Advantages**:
 - **Load Balancing**: Nginx distributes incoming traffic, improving application availability.
