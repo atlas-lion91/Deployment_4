@@ -123,7 +123,7 @@ During deployment and builds, it's essential to monitor server performance. Use 
 
 ### CPU Usage Alerts
 
-Set up a CloudWatch alarm to receive notifications when CPU usage exceeds 15% for 5 minutes, helping you proactively manage server resources.
+Set up a CloudWatch alarm to receive notifications when CPU usage exceeds 20% for 5 minutes, helping you proactively manage server resources.
 
 ### T2 Micro Considerations
 
