@@ -183,6 +183,7 @@ To optimize your deployment, consider the following strategies:
 ## System Diagram
 
 Here's a visual representation of the deployed system:
+![Deployment4 drawio](https://github.com/atlas-lion91/Deployment_4/assets/140761974/b4c0cc88-9071-4aa1-a75f-a24caaca6312)
 
 
 ## Conclusion
