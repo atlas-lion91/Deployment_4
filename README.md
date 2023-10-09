@@ -1,4 +1,4 @@
-# AWS EC2 Deployment 5 Guide: Monitoring with AWS CloudWatch
+# AWS EC2 Deployment 4 Guide: Monitoring with AWS CloudWatch
 
 October 2nd, 2023
 
